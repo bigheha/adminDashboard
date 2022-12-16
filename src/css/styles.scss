@@ -124,13 +124,21 @@
     background-color: rgb(225, 237, 249);
     grid-row: 3/5;
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template-columns: 65% 35%;
     z-index: -1;
 }
 .cards-container {
     display: grid;
-    background-color: yellow;
+
     grid-column: 1/2;
+    gap: 20px;
+    margin: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+}
+.card {
+    background-color: white;
+    border-radius: 15px;
 }
 .announcments-trending{
     display:grid;
